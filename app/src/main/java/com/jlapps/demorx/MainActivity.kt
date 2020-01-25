@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.jlapps.demorx.busca.BuscaActivity
+import com.jlapps.demorx.busca.pokemon.PokemonActivity
 import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        startActivity(Intent(this, BuscaActivity::class.java))
+        startActivity(Intent(this, PokemonActivity::class.java))
 
     }
 
